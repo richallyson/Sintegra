@@ -1,0 +1,36 @@
+﻿@model SintegraMVC.Models.SintegraViewModel
+
+@{
+    ViewData["Title"] = "Validar inscrição estadual";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form id="formCadastroFornecedor" enctype="multipart/form-data" novalidate style="margin-bottom: 75px;" autocomplete="off">
+    <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12">
+            <legend class="FundoDestaque">Dados do Cadastro</legend>
+            <div class="row">
+                <div class="col-12">
+                    <label asp-for="InscricaoEstadual" class="control-label">InscricaoEstadual</label>
+                    <input id="InscricaoEstadual" asp-for="InscricaoEstadual" name="cgc" required class="form-control LetraFormulario" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label asp-for="Uf" class="control-label">Estado</label>
+                    <input id="Estado" asp-for="Uf" name="cgc" required class="form-control LetraFormulario" type="text">
+                </div>
+            </div>
+            <div class="form-row mt-3">
+                <div class="form-group col-12 text-center">
+                    <button id="btnValidar" type="button" class="btn btn-sm btn-success"><i class="fa fa-save"></i>&nbsp;Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    <script src="~/js/Views/Sintegra.js"></script>
+}

@@ -1,0 +1,40 @@
+﻿# Ignora a pasta bin
+bin/
+
+# Ignora a pasta obj
+obj/
+
+# Ignora os arquivos de log
+*.log
+
+# Ignora os backups de arquivos
+*.bak
+
+# Ignora a pasta de dependências do npm
+node_modules/
+
+# Ignora a pasta de dependências do NuGet
+packages/
+
+# Ignora o arquivo de configuração do usuário do Jetbrains Rider
+.rider/
+
+# Ignora a pasta de publicação do projeto
+publish/
+
+# Ignora a pasta de configurações do usuário do Visual Studio Code
+.vscode/
+
+# Ignora os arquivos de configuração de lançamento do Visual Studio Code
+launch.json
+
+# Ignora os arquivos de configuração de tarefas do Visual Studio Code
+tasks.json
+
+# Ignora os arquivos gerados automaticamente pelo Visual Studio Code
+.vs/
+
+# Ignora os arquivos de backup do Visual Studio Code
+*.vscodebackup
+
+# Alterando apenas para o gitignore funcionar
